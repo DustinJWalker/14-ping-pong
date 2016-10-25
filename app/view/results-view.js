@@ -6,10 +6,20 @@ class ResultsView {
     this.el = document.createElement('div');
     this.el.classList.add('grid-card');
     this.el.innerHTMl = `
-     <div class="player__one"></div>
-     <div class="score__one"></div>
-     <div class="player__2"></div>
-     <div class="score__2"></div>`;
+    <div class="grid-card">
+           <div class="grid-item">
+           <h3 class="time"></h3>
+             <div class="grid-item__top">
+               <p class="player__1"></p>
+               <p class="verses">vs</p>
+               <p class="player__2"></p>
+             </div>
+             <div class="grid-item__bottom">
+               <p class="score__1"></p>
+               <p class="score__2"></p>
+             </div>
+           </div>
+       </div>`;
   }
 
   render() {
@@ -18,19 +28,4 @@ class ResultsView {
     this.querySelector('.player__two').innerText = this.model.name;
     this.querySelector('.score__two').innerText = this.model.score;
   }
-}
-
-export default class ResultsList {
-  constructor(el, model) {
-    this.el = el;
-    this.model = model;
-  }
-  render() {
-    this.el.innerHTMl = '';
-    this.model.forEach((result) => {
-      const game = new ResultsView(result);
-      game.render();
-      this.el.appendChild(game.el);
-    }
-  });
 }

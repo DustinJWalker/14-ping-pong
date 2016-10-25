@@ -7,7 +7,7 @@ export default class AppController {
   }
 
   start() {
-    this.resultView = new ResultListView(this.appElement.querySelector('.results-table__list'), this.model);
+    this.resultView = new ResultListView(this.appElement.querySelector('.grid'), this.model);
 
 
    // grab our data from the API
