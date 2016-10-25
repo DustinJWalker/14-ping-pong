@@ -1,3 +1,5 @@
+
+
 class ResultsView {
   constructor(model) {
     this.model = model;
@@ -27,5 +29,24 @@ class ResultsView {
     this.querySelector('.score__one').innerText = this.model.score;
     this.querySelector('.player__two').innerText = this.model.name;
     this.querySelector('.score__two').innerText = this.model.score;
+  }
+}
+
+
+export default class ResultView {
+  constructor(el, model) {
+    this.el = el;
+    this.model = model;
+  }
+
+  render() {
+    this.el.innerHTML = '';
+   // Loop through our model
+    this.model.forEach((result) => {
+      const row = new ResultView(result);
+      row.render();
+     // create a new result row
+      this.el.appendChild(row.el);
+    });
   }
 }
