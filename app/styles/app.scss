@@ -42,16 +42,28 @@
 }
 
 .grid {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .grid-card {
 }
 
-.tracker__info-top {
+.time {
+  background: rgba(16,7,113,1);
+
 }
 
-.tracker__info-bottom {
+.grid-item__top {
+  background: white;
+}
+
+.grid-item__bottom {
+  background: white;
 }
 
 .score {
+  text-align: center;
+  background: #e34400
+
 }
