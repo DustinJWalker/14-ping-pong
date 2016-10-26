@@ -1,4 +1,4 @@
-import ResultList from '../view/result-view';
+import ResultList from '../view/results-view';
 
 export default class AppController {
   constructor(appElement) {
@@ -7,7 +7,7 @@ export default class AppController {
   }
 
   start() {
-    this.resultView = new ResultListView(this.appElement.querySelector('.grid'), this.model);
+    this.resultView = new ResultList(this.appElement.querySelector('.grid'), this.model);
 
 
    // grab our data from the API
