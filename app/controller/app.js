@@ -1,4 +1,5 @@
 import ResultList from '../view/results-view';
+import FormView from '../view/form-view';
 
 export default class AppController {
   constructor(appElement) {
