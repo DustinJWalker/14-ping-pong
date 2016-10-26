@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <title>14-ping-pong</title>
+  <title>Ping Pong</title>
   <link rel="stylesheet" href="/app.css">
 </head>
+
 <body>
+  <div class="title-bar">
+    <h1 class="title-bar__header">Ping Pong Tracker</h1>
+  </div>
+  <div class="app">
+    <div class="content">
+      <div class="grid"></div>
+    </div>
+    <form class="home-form">
+      <div class="tracker__info-top">Contestant 1 Name</div>
+      <input type="text" placeholder="Contestant 1 Name" class="home-form__player"></input>
+      <div class="tracker__info-top">Contestant 1 Score</div>
+      <input type="text" placeholder="Contestant 1 Score" class="home-form__score"></input>
+      <div class="tracker__info-top">Contestant 2 Name</div>
+      <input type="text" placeholder="Contestant 2 Name"class="home-form__player"></input>
+      <div class="tracker__info-top">Contestant 2 Score</div>
+      <input type="text" placeholder="Contestant 2 Score"class="home-form__score"></input>
+
+      <button class="btn btn--submit" type="submit">Score!</button>
+    </form>
+  </div>
   <script src="/app.js" charset="utf-8"></script>
 </body>
+
 </html>

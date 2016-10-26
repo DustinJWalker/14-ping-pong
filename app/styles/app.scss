@@ -4,3 +4,66 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
+
+* {
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.title-bar {
+  background: rgba(16,7,113,1);
+  width: 100%;
+  padding: .5rem 1rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.result {
+  flex-grow: 1;
+  // flex-direction: column;
+  margin: 1rem;
+  width: calc(100% / 3 - 2rem);
+  min-width: 18rem;
+  flex-wrap: wrap;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.content {
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-card {
+}
+
+.time {
+  background: rgba(16,7,113,1);
+
+}
+
+.grid-item__top {
+  background: white;
+}
+
+.grid-item__bottom {
+  background: white;
+}
+
+.score {
+  text-align: center;
+  background: #e34400
+
+}
